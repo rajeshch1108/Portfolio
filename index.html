@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <h1>Hello, I'm <br><span>Cherukupalli Rajesh</span></h1>
+            <p>From B V Raju Institute of Technology</p>
+            <p>Information Technology</p>
+
+        </div>
+
+    </div>
+    </div>
+<!-------------------about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG-20240717-WA0140.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Seeking a suitable position in a reputed organization. Looking forward to an opportunity
+                            which would help me to acquire skills there by giving scope to exploit
+                            for the development of the organization</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('personal information')">Personal Information</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                
+                            </div>
+                            <div class="tab-contents active-tab" id="personal information">
+                                <ul>
+                                    <li><span>Mail ID:</span><br>rajeshcherukupalli@gmail.com</li>
+                                    <li><span>Contact No:</span><br>8341479882</li>
+                                    <li><span>Date of Birth</span><br>11-08-2003</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2020-2024</span><br>B.TECH-BVRIT, Hyderabad</li>
+                                    <li><span>2018-2020</span><br>Intermediate- Alphores, Karimnagar</li>
+                                    <li><span>2013-2018</span><br>SSC- Alphores, Sulthanabad</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------skills-->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="Skills-list">
+                <div>
+                    <h2>Technical Skills:</h2>
+                    <p>HTML <br>CSS<br> javascript<br> ReactJS<br> PYTHON<br> JAVA<br> SQL</p>
+                </div>
+                <div>
+                    <h2>Certification:</h2>
+                    <p> NPTEL-Programming, Data Structures and Algorithms using Python(Elite)<br>NPTEL-Soft skills(Silver Certificate)<br>Certificate of Oracle Databases for Developers: Foundations<br> Part of IoT BootCamp, sponsored by NCSTC division, Dept of Science and Technology, Govt of India.</p>
+                </div>
+                <div>
+                    <h2>Achievements:</h2>
+                    <p> As a Motorsport enthusiast, I have worked as assistant race control and marshal in Hyderabad ePrix, contributing to the
+                        smooth execution of such high-profile event.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="111.png">
+                    <div class="layer">
+                        <h3> NeuroScan: Trailblazing Early Alzheimer’s Detection with Deep Learning | Deep learning,Inception V3</h3>
+                        <p> Developed a novel deep learning-based framework, NeuroScan, to facilitate early detection of Alzheimer’s disease using
+                            diverse data sources, primarily brain imaging.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="222.png">
+                    <h3> Future Guide | HTML, CSS, JavaScript</h3>
+                        <p> Crafted a mobile as well as web application that offers a guided path for choosing courses depending on Student’s
+                            interest. Developed the top 2 features which are Guided Path, Courses according to path.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="work">
+                    <img src="333.png">
+                    <h3> Heart Failure Prediction | Python, Machine Learning, Android Studio</h3>
+                        <p> This project involves classification algorithms of Machine Learning, and deployed the best accuracy algorithm(Random
+                            Forest) into the app.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!---------------contact-->
+    <div id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>rajeshcherukupalli@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>8341479882</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100075874145112&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/deepthireddypabbathi?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/pabbathi-deepthi-reddy-007179235"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="C:\Users\91939\OneDrive\Documents\rajeshportfolio\Rajeshresume.pdf" download class="btn btn2">Download RESUME</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright © Created by Rajesh Cherukupalli</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontents of tabcontents){
+                tabcontents.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    
+</body>
+</html>
